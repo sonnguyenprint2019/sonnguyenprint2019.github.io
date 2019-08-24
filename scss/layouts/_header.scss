@@ -1,0 +1,209 @@
+.sn-header{
+  &__top{
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    @include breakpoint(xs){
+      display: none;
+    }
+  }
+  &__middle{}
+  &__bottom{
+    background-color: $blue-1;
+    @include breakpoint(sm){
+      display: block;
+    }
+  }
+}
+.sn-logo{
+  display: flex;
+  align-items: center;
+  .logo-text{
+    margin-left: 40px;
+  }
+}
+.header-top{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 -10px;
+  &__item{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    .p1{
+      width: 28px;
+      height: 28px;
+      border: 1px solid $orange;
+      border-radius: 50%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i{
+        color: $orange;
+        font-size: 12px;
+        &.fa-phone{
+          transform: rotate(90deg);
+        }
+      }
+    }
+    .p2{
+      font-size: 15px;
+      padding-left: 5px;
+      span{
+        color: $orange;
+      }
+    }
+  }
+}
+.header-middle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  &__logo{
+    .logo-text{
+      @include breakpoint(xs){
+        display: none;
+      }
+    }
+    .logo-icon{
+      width: 60px;
+    }
+  }
+  &__search{
+    @include breakpoint(xs){
+      display: none;
+    }
+    @include breakpoint(md){
+      width: 500px;
+    }
+  }
+  .navbar-toggler{
+    @include breakpoint(sm){
+      display: none;
+    }
+  }
+}
+.header-navbar{
+  @include breakpoint(xs){
+    margin: 0 -15px;
+  }
+  @include breakpoint(md){
+    margin: 0 -20px;
+  }
+  .navbar-nav{
+    flex-direction: row;
+    @include breakpoint(xs){
+      display: block;
+    }
+    > .menu-item{
+      position: relative;
+      z-index: 10;
+      @include breakpoint(xs){
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      @include breakpoint(md){
+        margin: 0 20px;
+      }
+      &:hover{
+        > .sub-menu{
+          display: block;
+        }
+      }
+      a{
+        font-size: 16px;
+        color: #fff;
+        display: block;
+        padding: 15px;
+        transition: all .1s;
+        @include breakpoint(md){
+          padding: 15px 30px;
+        }
+        .fa-bars{
+          margin-right: 20px;
+          font-size: 14px;
+          vertical-align: baseline;
+        }
+        &:hover{
+          text-decoration: none;
+
+          @include breakpoint(sm){
+            background-color: $blue-2;
+          }
+        }
+      }
+      > .sub-menu{
+        display: none;
+        @include breakpoint(xs){
+          padding: 0 15px;
+        }
+        @include breakpoint(sm){
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+        }
+        > .menu-item{
+          position: relative;
+          z-index: 10;
+          &:hover{
+            > .sub-menu{
+              display: block;
+            }
+          }
+          &:last-child{
+            a{
+              border-bottom: none;
+            }
+          }
+          a{
+            background-color: $blue-1;
+            border-bottom: 1px dotted #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            @include breakpoint(md){
+              padding: 15px 15px 15px 30px;
+            }
+            &:hover{
+              @include breakpoint(sm){
+                background-color: $blue-2;
+              }
+            }
+            .fa-chevron-right{
+              font-size: 12px;
+            }
+          }
+          > .sub-menu{
+            display: none;
+            @include breakpoint(sm){
+              position: absolute;
+              top: 0;
+              left: 100%;
+              width: 195px;
+            }
+            > .menu-item{
+              &:last-child{
+                a{
+                  border-bottom: none;
+                }
+              }
+              a{
+                background-color: $blue-2;
+                border-bottom: 1px dotted #fff;
+                &:hover{
+                  @include breakpoint(sm){
+                    background-color: $blue-1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

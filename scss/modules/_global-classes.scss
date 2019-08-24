@@ -70,3 +70,72 @@
     display: none;
   }
 }
+.backToTop{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  transition: background-color .3s,
+  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  @include breakpoint(xs){
+    display: none;
+  }
+  &.show{
+    opacity: 1;
+    visibility: visible;
+  }
+  &__btn{
+    width: 32px;
+    height: 32px;
+    background: $orange;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    cursor: pointer;
+    &:focus{
+      outline: none;
+    }
+    i{
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+}
+.hotline{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  &__phone{
+    background-color: $blue-1;
+    padding: 7px 40px 7px 15px;
+    border-radius: 30px;
+    p{
+      font-size: 18px;
+      color: #fff;
+      i{
+        transform: rotate(90deg);
+        font-size: 14px;
+        margin-right: 10px;
+      }
+    }
+  }
+  &__mess{
+    width: 53px;
+    height: 53px;
+    background-color: #13cf13;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -30px;
+    i{
+      color: #fff;
+      font-size: 40px;
+    }
+  }
+}

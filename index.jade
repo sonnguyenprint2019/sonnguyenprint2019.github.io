@@ -4,16 +4,365 @@ html(lang="vi")
     head
         include jades/head
     body(ontouchstart='')
-        include jades/menu-mobile.jade
         include jades/header.jade
-        main.tour-wrapper
-            section.tour-home
+        main.sn-wrapper
+            section.sn-home
+                .sn-home__banner
+                    .banner-slide
+                        .banner-slide__item
+                            img(src='images/slide1.jpg')
+                        .banner-slide__item
+                            img(src='images/slide2.jpg')
+                        .banner-slide__item
+                            img(src='images/slide3.jpg')
+                .sn-home__policy
+                    .container
+                        .policy-box
+                            .policy-box__item
+                                .policy-box__icon
+                                    img(src='images/policy1.png')
+                                .policy-box__text
+                                    p.p1 Giao hàng siêu tốc
+                                    p.p2 Nhận hàng trong vòng 1 giờ
 
+                            .policy-box__item
+                                .policy-box__icon
+                                    img(src='images/policy2.png')
+                                .policy-box__text
+                                    p.p1 Giá cực hấp dẫn
+                                    p.p2 Nhiều ưu đãi và chính sách tốt
+
+                            .policy-box__item
+                                .policy-box__icon
+                                    img(src='images/policy3.png')
+                                .policy-box__text
+                                    p.p1 bảo hành 12 tháng
+                                    p.p2 Sản phẩm đã được kiểm định & đảm bảo tiêu chuẩn
+
+                .sn-home__hot
+                    .container
+                        .product-hot
+                            .product-hot__title
+                                p Sản phẩm nổi bật
+                            .product-hot__slide
+                                .product-hot__item
+                                    .product-item
+                                        .product-item__img
+                                            img(src='images/product1.png')
+                                        .product-item__text
+                                            p.product-item__name In tem decal cuộn chuyên nghiệp
+                                            p.product-item__price 239.000₫
+                                        .product-item__btn
+                                            a.btn.btn-orange Mua ngay
+                                .product-hot__item
+                                    .product-item
+                                        .product-item__img
+                                            img(src='images/product2.png')
+                                        .product-item__text
+                                            p.product-item__name In tem decal cuộn chuyên nghiệp
+                                            p.product-item__price 239.000₫
+                                        .product-item__btn
+                                            a.btn.btn-orange Mua ngay
+                                .product-hot__item
+                                    .product-item
+                                        .product-item__img
+                                            img(src='images/product1.png')
+                                        .product-item__text
+                                            p.product-item__name In tem decal cuộn chuyên nghiệp
+                                            p.product-item__price 239.000₫
+                                        .product-item__btn
+                                            a.btn.btn-orange Mua ngay
+                                .product-hot__item
+                                    .product-item
+                                        .product-item__img
+                                            img(src='images/product2.png')
+                                        .product-item__text
+                                            p.product-item__name In tem decal cuộn chuyên nghiệp
+                                            p.product-item__price 239.000₫
+                                        .product-item__btn
+                                            a.btn.btn-orange Mua ngay
+                                .product-hot__item
+                                    .product-item
+                                        .product-item__img
+                                            img(src='images/product1.png')
+                                        .product-item__text
+                                            p.product-item__name In tem decal cuộn chuyên nghiệp
+                                            p.product-item__price 239.000₫
+                                        .product-item__btn
+                                            a.btn.btn-orange Mua ngay
+                                .product-hot__item
+                                    .product-item
+                                        .product-item__img
+                                            img(src='images/product2.png')
+                                        .product-item__text
+                                            p.product-item__name In tem decal cuộn chuyên nghiệp
+                                            p.product-item__price 239.000₫
+                                        .product-item__btn
+                                            a.btn.btn-orange Mua ngay
+                .sn-home__product
+                    .container
+                        .home-title
+                            h2 mã vạch công nghiệp
+                        .list-product
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product1.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product2.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product2.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product2.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product2.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+                .sn-home__product
+                    .container
+                        .home-title
+                            h2 giấy in nhiệt
+                        .list-product
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product1.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product2.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product2.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product2.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product2.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+                .sn-home__product
+                    .container
+                        .home-title
+                            h2 giấy in mã vạch siêu thị
+                        .list-product
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product1.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product2.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product2.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product2.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product2.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+                .sn-home__product
+                    .container
+                        .home-title
+                            h2 dịch vụ in
+                        .list-product
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product1.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product2.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product2.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product2.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+                            .list-product__item
+                                .product-item
+                                    .product-item__img
+                                        img(src='images/product2.png')
+                                    .product-item__text
+                                        p.product-item__name In tem decal cuộn chuyên nghiệp
+                                        p.product-item__price 239.000₫
+                                    .product-item__btn
+                                        a.btn.btn-orange Mua ngay
+
+            section.backToTop
+                button.backToTop__btn(type='button')
+                    i.fas.fa-chevron-up
+                .hotline
+                    .hotline__phone
+                        p
+                            i.fas.fa-phone
+                            | (024) 71 089 999
+                    .hotline__mess
+                        i.fab.fa-facebook-messenger
         include jades/footer.jade
         script(type='text/javascript' src="js/jquery-3.3.1.min.js")
         script(type='text/javascript' src="js/popper.min.js")
         script(type='text/javascript' src="js/bootstrap.min.js")
         script(type='text/javascript' src="js/slick.min.js")
+        script.
+            $('.product-hot__slide').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                //autoplay: true,
+                speed: 800,
+                dots: false,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 991,
 
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        script.
+            $('.banner-slide').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                //autoplay: true,
+                speed: 800,
+                dots: true,
+                arrows: true
+            });
 
+        script.
+            var backToTop = $('.backToTop');
 
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 300) {
+                    backToTop.addClass('show');
+            } else {
+                backToTop.removeClass('show');
+            }
+            });
+
+            backToTop.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '300');
+            });

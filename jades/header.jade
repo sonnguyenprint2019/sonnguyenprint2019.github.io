@@ -1,0 +1,74 @@
+header.sn-header
+    .sn-header__top
+        .container
+            .header-top
+                .header-top__item
+                    p.p1
+                        i.fas.fa-phone
+                    p.p2
+                        | Hotline:&nbsp;
+                        span (024) 71 089 999
+                .header-top__item
+                    p.p1
+                        i.fas.fa-map-marker-alt
+                    p.p2
+                        | Địa chỉ: Đội 8 Vĩnh Trung, Đại Áng, Thanh Trì, Hà Nội
+    .sn-header__middle
+        .container
+            .header-middle
+                .header-middle__logo
+                    .sn-logo
+                        img.logo-icon(src='images/logo-icon.png')
+                        img.logo-text(src='images/logo-text.png')
+                button.navbar-toggler(type='button' data-toggle='collapse', data-target='#collapsibleNavbar')
+                    i.fas.fa-bars
+                .header-middle__search
+                    .form-search
+                        input.form-control(type='text' placeholder='Tìm kiếm')
+                        button.btn.btn-orange(type='button')
+                            i.fas.fa-search
+    .sn-header__bottom.collapse.navbar-collapse#collapsibleNavbar
+        .container
+            .header-navbar
+                ul.nav.navbar-nav
+                    li.menu-item.menu-item-has-children
+                        a(href='#')
+                            i.fas.fa-bars
+                            | Danh mục sản phẩm
+                        ul.sub-menu
+                            li.menu-item
+                                a(href='#') Mã vạch công nghiệp
+                            li.menu-item.menu-item-has-children
+                                a(href='#') Giấy in nhiệt
+
+                            li.menu-item.menu-item-has-children
+                                a(href='#') Giấy in mã vạch siêu thị
+
+                            li.menu-item.menu-item-has-children
+                                a(href='#')
+                                    | Dịch vụ in
+                                    i.fas.fa-chevron-right
+                                ul.sub-menu
+                                    li.menu-item
+                                        a(href='#') In Flexo
+
+                                    li.menu-item
+                                        a(href='#') In UV
+
+                                    li.menu-item
+                                        a(href='#') In Offset
+
+                                    li.menu-item
+                                        a(href='#') In tem cuộn
+
+                    li.menu-item.current-menu-item
+                        a(href='#') Trang chủ
+
+                    li.menu-item
+                        a(href='#') Giới thiệu
+
+                    li.menu-item
+                        a(href='#') Tin tức
+
+                    li.menu-item
+                        a(href='#') Liên hệ

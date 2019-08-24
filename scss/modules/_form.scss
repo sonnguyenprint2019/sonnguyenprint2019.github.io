@@ -14,9 +14,9 @@ select.form-control:not([size]):not([multiple]){
   }
 }
 .form-control{
-  border: 1px solid rgb(221, 221, 221);
-  border-radius:3px;
-  padding: 12px 15px;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius:5px;
+  padding: 11px 15px;
   font-size: 16px;
   font-weight: $regular;
   color: $black-1;
@@ -24,12 +24,9 @@ select.form-control:not([size]):not([multiple]){
 
   &:focus{
     color: $black-1;
-    border-color: $main-color;
+    border-color: rgb(232, 232, 232);
     outline: 0;
     box-shadow: none;
-  }
-  &:active{
-    border-color: $main-color;
   }
   &::-webkit-input-placeholder {
     color:#b4b3b3;
@@ -45,51 +42,16 @@ select.form-control:not([size]):not([multiple]){
   }
 
 }
-
-.breadcrumb{
-  background: none;
-  padding:0;
-  .breadcrumb-item{
-    font-size: 16px;
-    color: $text-color;
-    a{
-      color: $text-color;
-    }
-  }
-}
-.counter-input{
+.form-search{
   display: flex;
-  align-items: center;
-  width: 120px;
-  border: 1px solid #ddd;
-  &__btn{
-    width: 40px;
-    background: none;
-    border: none;
-    padding: 2px 0;
-    font-size: 18px;
-    font-weight: $semibold;
-    cursor: pointer;
-    &:focus{
-      outline: none;
-    }
-    &:hover{
-      background-color: #f1f1f1;
-    }
-    &.minus{
-      border-right: 1px solid #ddd;
-      color: #f34646;
-    }
-    &.plus{
-      border-left: 1px solid #ddd;
-      color: #00a651;
-    }
+  .form-control{
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+    width: calc(100% - 70px);
   }
-  p{
-    width: 40px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: $semibold;
-    color: $text-color;
+  .btn{
+    border-radius: 0 5px 5px 0;
+    width: 70px;
   }
 }
+

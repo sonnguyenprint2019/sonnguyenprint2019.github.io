@@ -1,0 +1,112 @@
+.banner-slide{
+  height: 360px;
+  @include breakpoint(sm){
+    height: 540px;
+  }
+  &__item{
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .slick-next, .slick-prev{
+    width: 30px;
+    height: 80px;
+    border-radius: 16px;
+    background-color:rgba(0, 0, 0, 0.3);
+    &:before{
+      color: #fff;
+    }
+  }
+  .slick-next{
+    right: 25px;
+  }
+  .slick-prev{
+    left: 25px;
+  }
+  .slick-dots{
+    bottom: 20px;
+  }
+}
+.policy-box{
+  @include breakpoint(sm){
+    display: flex;
+    margin: 0 -15px;
+  }
+  &__item{
+    text-align: center;
+    padding: 15px 0;
+    @include breakpoint(sm){
+      width: 33.333%;
+      padding: 15px;
+    }
+    @include breakpoint(lg){
+      display: flex;
+      align-items: center;
+      text-align: left;
+    }
+  }
+  &__icon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 82px;
+    margin: 0 0 10px;
+    @include breakpoint(lg){
+      margin: 0 20px 0 0;
+    }
+  }
+  &__text{
+    .p1{
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: $medium;
+    }
+  }
+}
+.product-hot{
+  border: 1px solid $blue-1;
+  border-radius: 6px;
+  overflow: hidden;
+  &__title{
+    background-color: $blue-1;
+    padding: 10px 15px;
+    text-align: center;
+    p{
+      color: #fff;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: $medium;
+    }
+  }
+  &__slide{
+    .slick-next, .slick-prev{
+      top: -40px;
+      transform: none;
+      background: none;
+      &:before{
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+  }
+  &__item{
+    border-right: 1px solid #eee;
+    .product-item{
+      &__img{
+        border: none;
+        padding: 30px;
+      }
+    }
+  }
+}
+.sn-home{
+  &__banner{}
+  &__policy{
+    padding: 15px 0;
+  }
+  &__hot{
+    margin-bottom: 30px;
+  }
+}
