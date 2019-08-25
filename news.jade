@@ -1,0 +1,146 @@
+- var page = "news";
+doctype html
+html(lang="vi")
+    head
+        include jades/head
+    body(ontouchstart='')
+        include jades/header.jade
+        main.sn-wrapper
+            section.sn-news
+                .sn-breadcrumb
+                    .container
+                        ul.breadcrumb
+                            li.breadcrumb-item
+                                a(href='#') Trang chủ
+                            li.breadcrumb-item.active(aria-current='page') Tin tức
+                .container
+                    .sn-news__main
+                        .sn-news__left
+                            .product-title
+                                h2 tin tức
+                            .list-news
+                                .list-news__item
+                                    .news-item
+                                        .news-item__img
+                                            img(src='images/news1.png')
+                                        .news-item__content
+                                            a.news-item__title(href='#') 6 câu hỏi thường gặp khi in catalogue
+                                            p.news-item__date 20/08/2019 - 10:16
+                                            p.news-item__text Hiện nay, các doanh nghiệp, đơn vị, nhà sản xuất ,tổ chức thường xuyên phải in ấn cần hiểu rõ tất cả các thông tin kiến thức cơ bản về giấy in.. Việc này giúp ích trong việc lựa chọn được loại giấy, dịch vụ cung cấp giấy phù hợp và tiết kiệm được nhiều chi phí cho sản xuất.
+                                .list-news__item
+                                    .news-item
+                                        .news-item__img
+                                            img(src='images/news2.png')
+                                        .news-item__content
+                                            a.news-item__title(href='#') Tác dụng đặc biệt của in catalogue cao cấp giá rẻ
+                                            p.news-item__date 20/08/2019 - 10:16
+                                            p.news-item__text Trong thời buổi hiện đại ngày nay , brochure luôn là công cụ marketing hiệu quả đem đến lợi ích cao cho các doanh nghiệp . Tuy nhiên, không phải doanh nghiệp nào cũng nắm rõ được các nguyên tắc để thiết kế brochure và in brochure sao cho hiệu quả.
+                                .list-news__item
+                                    .news-item
+                                        .news-item__img
+                                            img(src='images/news3.png')
+                                        .news-item__content
+                                            a.news-item__title(href='#') Lý do bạn nên chọn xưởng in hộp bánh trung thu
+                                            p.news-item__date 20/08/2019 - 10:16
+                                            p.news-item__text Ellie Birkhead, tốt nghiệp Học viện Thiết kế Eindhoven đã sáng tạo ra một phương pháp làm gạch độc đáo, sử dụng phế thải từ Chiltern Hills nhằm “gây dựng một tương lai mới cho ngành công nghiệp tại địa phương”.
+                            .sn-pagination
+                                ul.pagination
+                                    li.page-item
+                                        a.page-link(href='#') <<
+                                    li.page-item
+                                        a.page-link(href='#') 1
+                                    li.page-item.active
+                                        a.page-link(href='#') 2
+                                    li.page-item
+                                        a.page-link(href='#') 3
+                                    li.page-item
+                                        a.page-link(href='#') >>
+                        .sn-news__right
+                            .product-title
+                                h2 sản phẩm chủ yếu
+
+
+                            .product-slide
+                                .product-slide__item
+                                    .sn-card
+                                        .sn-card__img
+                                            img(src='images/card1.png')
+                                        .sn-card__content
+                                            a.sn-card__title(href='#') In tem decal cuộn chuyên nghiệp
+                                            p.sn-card__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                                            button.sn-card__show(type='button') Xem thêm...
+                                .product-slide__item
+                                    .sn-card
+                                        .sn-card__img
+                                            img(src='images/card1.png')
+                                        .sn-card__content
+                                            a.sn-card__title(href='#') In tem decal cuộn chuyên nghiệp
+                                            p.sn-card__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                                            button.sn-card__show(type='button') Xem thêm...
+                                .product-slide__item
+                                    .sn-card
+                                        .sn-card__img
+                                            img(src='images/card1.png')
+                                        .sn-card__content
+                                            a.sn-card__title(href='#') In tem decal cuộn chuyên nghiệp
+                                            p.sn-card__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                                            button.sn-card__show(type='button') Xem thêm...
+                                .product-slide__item
+                                    .sn-card
+                                        .sn-card__img
+                                            img(src='images/card1.png')
+                                        .sn-card__content
+                                            a.sn-card__title(href='#') In tem decal cuộn chuyên nghiệp
+                                            p.sn-card__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                                            button.sn-card__show(type='button') Xem thêm...
+                            .sn-video
+                                .sn-video__header
+                                    p video
+                                .sn-video__body
+                                    iframe( src='https://www.youtube.com/embed/tgbNymZ7vqY')
+                                p.sn-video__title Bế gia công và in gia công giấy decal in tem nhãn mã vạch
+                            .sn-banner
+                                img(src='images/banner1.png')
+                            .sn-banner
+                                img(src='images/banner2.png')
+                            .sn-banner
+                                img(src='images/banner3.png')
+            section.backToTop
+                button.backToTop__btn(type='button')
+                    i.fas.fa-chevron-up
+                .hotline
+                    .hotline__phone
+                        p
+                            i.fas.fa-phone
+                            | (024) 71 089 999
+                    .hotline__mess
+                        i.fab.fa-facebook-messenger
+        include jades/footer.jade
+        script(type='text/javascript' src="js/jquery-3.3.1.min.js")
+        script(type='text/javascript' src="js/popper.min.js")
+        script(type='text/javascript' src="js/bootstrap.min.js")
+        script(type='text/javascript' src="js/slick.min.js")
+        script.
+            var backToTop = $('.backToTop');
+
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 300) {
+                    backToTop.addClass('show');
+                } else {
+                    backToTop.removeClass('show');
+                }
+            });
+
+            backToTop.on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({scrollTop:0}, '300');
+            });
+        script.
+            $('.product-slide').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                //autoplay: true,
+                speed: 800,
+                dots: false,
+                arrows: true
+            });
