@@ -25,3 +25,14 @@
     }
   }
 }
+.product-title{
+  border-bottom: 1px solid $orange;
+  margin: 30px 0 10px;
+  h2{
+    font-size: 24px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: $light;
+    padding-bottom: 10px;
+  }
+}

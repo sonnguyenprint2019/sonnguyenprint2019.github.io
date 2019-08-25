@@ -1,0 +1,33 @@
+.product-sort{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  &__result{
+    @include breakpoint(xs){
+      width: 100%;
+      order: 2;
+    }
+    p{
+      font-size: 14px;
+      color: #484848;
+      margin: 0;
+    }
+  }
+  &__select{
+    @include breakpoint(xs){
+      width: 100%;
+      order: 1;
+      margin-bottom: 15px;
+    }
+    .form-control{
+      cursor: pointer;
+    }
+  }
+}
+.sn-product-list{
+  .list-product{
+    justify-content: left;
+  }
+}
