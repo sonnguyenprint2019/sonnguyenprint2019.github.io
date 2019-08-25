@@ -1,0 +1,209 @@
+- var page = "product-detail";
+doctype html
+html(lang="vi")
+    head
+        include jades/head
+    body(ontouchstart='')
+        include jades/header.jade
+        main.sn-wrapper
+            section.sn-product-detail
+                .sn-breadcrumb
+                    .container
+                        ul.breadcrumb
+                            li.breadcrumb-item
+                                a(href='#') Trang chủ
+                            li.breadcrumb-item
+                                a(href='#') Sản phẩm
+                            li.breadcrumb-item.active(aria-current='page') Mã vạch công nghiệp
+
+                        .product-detail
+
+                .sn-product-detail__main
+                    .container
+                        .product-detail
+                            .product-detail__left
+                                .product-detail__photo
+                                    img(src='images/product1.png')
+                                .product-detail__slide
+                                    .detail-slide
+                                        .detail-slide__item
+                                            .detail-slide__img
+                                                img(src='images/product1.png')
+                                        .detail-slide__item
+                                            .detail-slide__img
+                                                img(src='images/product2.png')
+                                        .detail-slide__item
+                                            .detail-slide__img
+                                                img(src='images/product1.png')
+                                        .detail-slide__item
+                                            .detail-slide__img
+                                                img(src='images/product2.png')
+                            .product-detail__right
+                                .product-detail__name
+                                    h5 Máy in mã vạch Zebra ZM600
+                                    .d-flex
+                                        p.p1
+                                            | Mã sản phẩm:&nbsp;
+                                            span ZM600
+                                        p.p2
+                                            | Tình trạng:&nbsp;
+                                            span Sẵn hàng
+                                .product-detail__price
+                                    p.p1 21.000.000đ
+                                    ul
+                                        li · Bộ nhớ: 16 MB DRAM, 8MB Flash. Bộ vi xử lý 32-bit
+                                        li · Độ phân giải 203dpi (8 dots / mm)
+                                        li · Cổng kết nối: RS-232C, IEEE 1284, LPT,USB 2.0
+                                        li · Màn hình LCD: Đa ngôn ngữ backlit 240x128 pixel
+                                        li · In tem RFID
+                                        li · Tự động hiệu chỉnh khổ giấy
+                                        li · Tương thích font Unicode ™
+                                        li · Thay đổi nhanh chóng đầu in và mực in
+                                .product-detail__amount
+                                    .amount-box
+                                        .amount-box__minus.disabled
+                                            span -
+                                        .amount-box__value
+                                            span 1
+                                        .amount-box__plus
+                                            span +
+                                .product-detail__btn
+                                    button.btn.btn-orange(type='button') ĐẶT MUA
+                        ul.product-tab
+                            li.product-tab__item.active
+                                button.product-tab__link(type='button') Tổng quan
+                            li.product-tab__item
+                                button.product-tab__link(type='button') Thông số
+                            li.product-tab__item
+                                button.product-tab__link(type='button') Đánh giá (0)
+
+                        .product-info
+                            .product-info__item
+                                p Máy in mã vạch Zebra ZM600
+                                p Máy in công nghiệp Zebra Z Series là bản nâng cấp với công nghệ RFID để mã hóa nhãn thông minh. In nhãn kho, quản lý hàng tồn kho hiệu quả hơn với máy in Z Series. Máy in mã vạch Zebra Z Series cho phép in tốc độ cao, dung lượng lớn in ấn. Các tùy chọn in ấn XML cho phép kết nối trực tiếp đến các ứng dụng ERP .
+                                p In hóa đơn, biên lai, nhãn và hơn nữa khổ in lên đến 4 inch chiều rộng với máy in di động bền đáp ứng tiêu chuẩn IP54 về chống bụi và khả năng chịu nước.
+                                p
+                                    | Sử dụng cho:
+                                    br
+                                    | Quản lý tài sản
+                                    br
+                                    | Cross Docking
+                                    br
+                                    | Quản lý tài liệu
+                                    br
+                                    | Quản lý hàng tồn kho
+                                    br
+                                    | Phòng thí nghiệm theo dõi mẫu
+                                    br
+                                    | Giao nhận / Vận chuyển
+                                    br
+                                    | Logistics
+                                    br
+                                    | Trong Công việc theo dõi quá trình
+                                    br
+                                    | Tuân thủ ghi nhãn
+                                    br
+                                    | Chế độ ăn uống
+                                    br
+                                    | Nhãn thông tin
+                                    br
+                                    | Ghi nhãn y tế
+                                    br
+                                    | Ghi nhãn đặt hàng
+                        .product-group
+                            .home-title
+                                h2 sản phẩm cùng loại
+                            .list-product
+                                .list-product__item
+                                    .product-item
+                                        .product-item__img
+                                            img(src='images/product1.png')
+                                        .product-item__text
+                                            p.product-item__name In tem decal cuộn chuyên nghiệp
+                                            p.product-item__price 239.000₫
+                                        .product-item__btn
+                                            a.btn.btn-orange(href='product-list.html') Mua ngay
+                                .list-product__item
+                                    .product-item
+                                        .product-item__img
+                                            img(src='images/product2.png')
+                                        .product-item__text
+                                            p.product-item__name In tem decal cuộn chuyên nghiệp
+                                            p.product-item__price 239.000₫
+                                        .product-item__btn
+                                            a.btn.btn-orange(href='product-list.html') Mua ngay
+                                .list-product__item
+                                    .product-item
+                                        .product-item__img
+                                            img(src='images/product2.png')
+                                        .product-item__text
+                                            p.product-item__name In tem decal cuộn chuyên nghiệp
+                                            p.product-item__price 239.000₫
+                                        .product-item__btn
+                                            a.btn.btn-orange(href='product-list.html') Mua ngay
+                                .list-product__item
+                                    .product-item
+                                        .product-item__img
+                                            img(src='images/product2.png')
+                                        .product-item__text
+                                            p.product-item__name In tem decal cuộn chuyên nghiệp
+                                            p.product-item__price 239.000₫
+                                        .product-item__btn
+                                            a.btn.btn-orange(href='product-list.html') Mua ngay
+                                .list-product__item
+                                    .product-item
+                                        .product-item__img
+                                            img(src='images/product2.png')
+                                        .product-item__text
+                                            p.product-item__name In tem decal cuộn chuyên nghiệp
+                                            p.product-item__price 239.000₫
+                                        .product-item__btn
+                                            a.btn.btn-orange(href='product-list.html') Mua ngay
+            section.backToTop
+                button.backToTop__btn(type='button')
+                    i.fas.fa-chevron-up
+                .hotline
+                    .hotline__phone
+                        p
+                            i.fas.fa-phone
+                            | (024) 71 089 999
+                    .hotline__mess
+                        i.fab.fa-facebook-messenger
+        include jades/footer.jade
+        script(type='text/javascript' src="js/jquery-3.3.1.min.js")
+        script(type='text/javascript' src="js/popper.min.js")
+        script(type='text/javascript' src="js/bootstrap.min.js")
+        script(type='text/javascript' src="js/slick.min.js")
+        script.
+            var backToTop = $('.backToTop');
+
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 300) {
+                    backToTop.addClass('show');
+                } else {
+                    backToTop.removeClass('show');
+                }
+            });
+
+            backToTop.on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({scrollTop:0}, '300');
+            });
+        script.
+            $('.detail-slide').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                //autoplay: true,
+                speed: 800,
+                dots: false,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });

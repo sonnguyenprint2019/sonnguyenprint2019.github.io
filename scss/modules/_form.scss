@@ -54,4 +54,33 @@ select.form-control:not([size]):not([multiple]){
     width: 70px;
   }
 }
+.amount-box{
+  display: flex;
+  &__minus,
+  &__plus{
+    padding: 5px 15px;
+    cursor: pointer;
+    border: 1px solid #eee;
+    span{
+      font-weight: $black;
+      font-size: 22px;
+    }
+  }
+  &__value{
+    padding: 5px 25px;
+    border: 1px solid #eee;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+      font-size: 18px;
+      font-weight: $medium;
+    }
+  }
+  .disabled{
+    pointer-events: none;
+    opacity: .3;
+  }
+}
 
