@@ -186,12 +186,20 @@
     &:focus{
       outline: none;
     }
+    &:hover{
+      text-decoration: none;
+      color: $orange;
+    }
   }
 }
 .product-info{
   margin-bottom: 30px;
   &__item{
     padding-top: 30px;
+    display: none;
+    &.active{
+      display: block;
+    }
     p{
       color: #505050;
       font-size: 14px;
